@@ -13,16 +13,18 @@ import java.util.Scanner;
 public class MainClass {
 
  public static void main(String[] args) {
+	 // Initialize Student instances
 	Student std1= new Student("James", 20);
 	Freshman std2= new Freshman("James", 20, 12); // name, age, credits
 	Senior std3 = new Senior("John", 30, 90);
 
+	// Set GPA for std1 using user input
 	 Scanner scnr = new Scanner(System.in);
 	 System.out.print("Enter GPA for " + std1.getName() + ": ");
 	 double gpaInput = scnr.nextDouble();
 	 std1.setGpa(gpaInput);
 
-
+	 // Printing user information using toString method
 	System.out.println(std1);
 	System.out.println(std2);
 	System.out.println(std3);
