@@ -12,16 +12,18 @@ public class Student extends Human {
     private int credits;
     private double gpa;
 
+    // Constructor that takes only name and age
 	public Student(String name, int age) {
         super(name, (short) age);
     }
 
+    // Constructor that takes name, age, and credits
     public Student(String name, int age, int credits) {
         super(name, (short) age);
         this.credits = credits;
     }
 
-	// ToDo 3: Add a field for GPA and create a setter and a getter
+	// Setters and getters for credits and gpa
     public int getCredits() {
         return credits;
     }
@@ -35,6 +37,5 @@ public class Student extends Human {
     public void setGpa(double gpa) {
         this.gpa = gpa;
     }
-	
-	// ToDo 4: Add comments to your code
+
 }
