@@ -13,12 +13,13 @@ public abstract class Human {
 	private String address;
 	private short age;
 
-	// constructor that takes only two paras
+	// constructor that takes only two parameters
 	public Human(String name, short age) {
 		this.name = name;
 		this.age = age;
 	}
 
+	// Setters and getters for name and age
 	public String getName() {
 		return name;
 	}

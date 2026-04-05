@@ -23,7 +23,7 @@ public class Student extends Human {
         this.credits = credits;
     }
 
-	// Setters and getters for credits and gpa
+	// Setters and getters for credits, gpa, and address
     public int getCredits() {
         return credits;
     }
@@ -38,4 +38,24 @@ public class Student extends Human {
         this.gpa = gpa;
     }
 
+    @Override
+    public String getAddress() {
+        return null; // Placeholder implementation
+    }
+
+    @Override
+    public void setAddress(String address) {
+        // Placeholder implementation
+    }
+
+    // Decided to add a toString method for better output representation
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + getName() + '\'' +
+                ", age=" + getAge() +
+                ", credits=" + credits +
+                ", gpa=" + gpa +
+                '}';
+    }
 }
